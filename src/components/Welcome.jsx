@@ -5,13 +5,14 @@ export default function Welcome(props) {
     console.log(props)
     return (
         <>
-            <div>
-                <div>
-                    <div>Email</div>
+            <div className="welcome">
+                <p>Thanks a ton for taking out your precious time and for completing the survey Email Address Contact Number</p>
+                <div className="email">
+                    <div>Address :</div>
                     <div>{props.email}</div>
                 </div>
-                <div>
-                    <div>Number</div>
+                <div className="number">
+                    <div>Contact :</div>
                     <div>{props.number}</div>
                 </div>
             </div>

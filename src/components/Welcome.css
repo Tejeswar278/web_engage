@@ -1,0 +1,9 @@
+.welcome {
+    margin: auto;
+    text-align: center;
+}
+
+.email, .number {
+    display: flex;
+    flex-direction: row;
+}
