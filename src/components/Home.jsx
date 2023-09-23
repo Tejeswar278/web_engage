@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Home() {
 
+
     const [email, setEmail] = useState("")
     const [number, setNumber] = useState("")
 
@@ -11,7 +12,7 @@ export default function Home() {
   
     const welcomepage = () => {
       // 👇️ navigate to /contacts
-      navigate('/home');
+      navigate('/home',{state : {email : email, contact : number}});
     };
   
     const handleSubmit = (event) => {
